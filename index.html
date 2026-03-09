@@ -315,9 +315,19 @@ margin-bottom:12px;
 
 <h2 class="section-title">Featured AI Tools</h2>
 
+  <div class="categories">
+
+<button onclick="filterTools('all')">All</button>
+<button onclick="filterTools('writing')">Writing</button>
+<button onclick="filterTools('image')">Image</button>
+<button onclick="filterTools('video')">Video</button>
+<button onclick="filterTools('productivity')">Productivity</button>
+
+</div>
+
 <div class="tools-grid">
 
-<div class="tool-card">
+<div class="tool-card" data-category="writing">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg">
   <span class="badge">🔥 Trending</span>
 <h3>ChatGPT</h3>
@@ -325,21 +335,21 @@ margin-bottom:12px;
 <a href="https://chat.openai.com" target="_blank">Visit Tool</a>
 </div>
 
-<div class="tool-card">
+<div class="tool-card" data-category="productivity">
  <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png">
  <h3>Notion AI</h3>
 <p>AI powered workspace assistant for notes, productivity, and organization.</p>
 <a href="https://notion.so" target="_blank">Visit Tool</a>
 </div>
 
-<div class="tool-card">
+<div class="tool-card" data-category="image">
  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png">
  <h3>Midjourney</h3>
 <p>Create stunning AI generated artwork and images from simple prompts.</p>
 <a href="https://midjourney.com" target="_blank">Visit Tool</a>
 </div>
 
-<div class="tool-card">
+<div class="tool-card" data-category="video">
  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/RunwayML_Logo.png">
  <h3>Runway ML</h3>
 <p>Create AI powered videos, effects, and media content with powerful tools.</p>
@@ -374,6 +384,30 @@ margin-bottom:12px;
 
 </footer>
 
+<script>
+
+function filterTools(category){
+
+let cards = document.querySelectorAll(".tool-card");
+
+cards.forEach(card => {
+
+if(category === "all"){
+card.style.display = "block";
+}
+else if(card.dataset.category === category){
+card.style.display = "block";
+}
+else{
+card.style.display = "none";
+}
+
+});
+
+}
+
+</script>
+   
 </body>
 
 </html>
