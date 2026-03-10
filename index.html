@@ -163,6 +163,25 @@ tool.style.display = "none";
 
 });
 
+function filterTools(category){
+
+const tools = document.querySelectorAll(".tool-card");
+
+tools.forEach(tool => {
+
+const toolCategory = tool.getAttribute("data-category");
+
+if(category === "all" || toolCategory === category){
+tool.style.display = "block";
+}
+else{
+tool.style.display = "none";
+}
+
+});
+
+}
+
 </script>
 </body>
 
