@@ -277,6 +277,11 @@ border:1px solid #ddd;
 font-size:16px;
 }
 
+.rating{
+color:#f5a623;
+font-size:14px;
+margin-bottom:8px;
+}
 .tool-card-link{
 text-decoration:none;
 color:inherit;
