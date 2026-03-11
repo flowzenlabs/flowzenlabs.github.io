@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FlowZenLabs | AI Tools Directory</title>
 
-<meta name="description" content="Discover the best AI tools for productivity, automation, design, and business.">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover the best AI tools for productivity, automation, design and business.">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
 
 <nav>
 
@@ -31,13 +33,15 @@
 </nav>
 
 
+
 <section class="hero">
 
 <h1>Discover Powerful AI Tools</h1>
 
-<p>Your directory for the best AI tools for productivity, automation, and creativity.</p>
+<p>Your directory for the best AI tools for productivity, automation and creativity.</p>
 
 </section>
+
 
 
 <div class="container">
@@ -47,7 +51,7 @@
 <div class="tools-grid">
 
 <a href="tools/chatgpt.html" class="tool-card-link">
-<div class="tool-card" data-category="writing">
+<div class="tool-card">
 
 <img src="chatgpt.jpeg" loading="lazy">
 
@@ -62,7 +66,7 @@
 
 
 <a href="tools/midjourney.html" class="tool-card-link">
-<div class="tool-card" data-category="image">
+<div class="tool-card">
 
 <img src="midjourney.png" loading="lazy">
 
@@ -74,33 +78,20 @@
 
 </div>
 </a>
-<a href="tools/jasper.html" class="tool-card-link">
-
-<div class="tool-card" data-category="writing">
-
-<img src="jasper.png" loading="lazy">
-
-<h3>Jasper AI</h3>
-
-<div class="rating">★★★★★ 4.7</div>
-
-<p>
-AI writing assistant for marketing copy, blogs,
-ads, and business content creation.
-</p>
 
 </div>
 
-</a>
 </div>
 
 
+
+<div class="container">
 
 <h2 class="section-title">Featured AI Tools</h2>
 
 <div class="search-box">
 
-<input 
+<input
 type="text"
 id="toolSearch"
 placeholder="Search AI tools...">
@@ -123,21 +114,19 @@ placeholder="Search AI tools...">
 <div class="tools-grid">
 
 
+
 <a href="tools/chatgpt.html" class="tool-card-link">
 <div class="tool-card" data-category="writing">
 
-<img src="chatgpt.jpeg" loading="lazy">
-
 <span class="badge">🔥 Trending</span>
+
+<img src="chatgpt.jpeg" loading="lazy">
 
 <h3>ChatGPT</h3>
 
 <div class="rating">★★★★★ 4.9</div>
 
-<p>
-Advanced AI chatbot for writing, coding, research,
-and automation.
-</p>
+<p>Advanced AI chatbot for writing, coding, research and automation.</p>
 
 </div>
 </a>
@@ -153,10 +142,7 @@ and automation.
 
 <div class="rating">★★★★★ 4.7</div>
 
-<p>
-AI powered workspace assistant for notes,
-productivity, and organization.
-</p>
+<p>AI powered workspace assistant for notes, productivity and organization.</p>
 
 </div>
 </a>
@@ -172,10 +158,7 @@ productivity, and organization.
 
 <div class="rating">★★★★★ 4.8</div>
 
-<p>
-Create stunning AI generated artwork
-and images from simple prompts.
-</p>
+<p>Create stunning AI generated artwork and images from simple prompts.</p>
 
 </div>
 </a>
@@ -191,13 +174,27 @@ and images from simple prompts.
 
 <div class="rating">★★★★★ 4.6</div>
 
-<p>
-Create AI powered videos, visual effects,
-and media content easily.
-</p>
+<p>Create AI powered videos, visual effects and media content easily.</p>
 
 </div>
 </a>
+
+
+
+<a href="tools/jasper.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+
+<img src="jasper.jpg" loading="lazy">
+
+<h3>Jasper AI</h3>
+
+<div class="rating">★★★★★ 4.7</div>
+
+<p>AI writing assistant for marketing copy, blogs, ads and business content creation.</p>
+
+</div>
+</a>
+
 
 </div>
 
@@ -212,11 +209,8 @@ and media content easily.
 <div class="category-list">
 
 <a class="category" href="ai-writing-tools.html">AI Writing Tools</a>
-
 <a class="category" href="ai-image-generators.html">AI Image Generators</a>
-
 <a class="category" href="ai-video-tools.html">AI Video Tools</a>
-
 <a class="category" href="ai-automation-tools.html">AI Automation Tools</a>
 
 </div>
@@ -238,7 +232,7 @@ and media content easily.
 const searchInput = document.getElementById("toolSearch");
 const tools = document.querySelectorAll(".tool-card");
 
-searchInput.addEventListener("keyup", function() {
+searchInput.addEventListener("keyup", function(){
 
 const value = this.value.toLowerCase();
 
@@ -257,10 +251,7 @@ tool.style.display = "none";
 });
 
 
-
 function filterTools(category){
-
-const tools = document.querySelectorAll(".tool-card");
 
 tools.forEach(tool => {
 
