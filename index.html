@@ -61,6 +61,21 @@
 </a>
 
 
+<a href="tools/claude.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+
+<img src="claude.png">
+
+<h3>Claude AI</h3>
+
+<div class="rating">★★★★★ 4.8</div>
+
+<p>Advanced AI assistant for writing, reasoning and research tasks.</p>
+
+</div>
+</a>
+
+
 <a href="tools/midjourney.html" class="tool-card-link">
 <div class="tool-card" data-category="image">
 
@@ -108,6 +123,7 @@ placeholder="Search AI tools...">
 
 <div class="tools-grid">
 
+
 <a href="tools/chatgpt.html" class="tool-card-link">
 <div class="tool-card" data-category="writing">
 
@@ -119,7 +135,22 @@ placeholder="Search AI tools...">
 
 <div class="rating">★★★★★ 4.9</div>
 
-<p>Advanced AI chatbot for writing, coding, research and automation.</p>
+<p>Advanced AI chatbot for writing, coding, research, and automation.</p>
+
+</div>
+</a>
+
+
+<a href="tools/claude.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+
+<img src="claude.png">
+
+<h3>Claude AI</h3>
+
+<div class="rating">★★★★★ 4.8</div>
+
+<p>Advanced AI assistant for writing, reasoning and research.</p>
 
 </div>
 </a>
@@ -134,7 +165,7 @@ placeholder="Search AI tools...">
 
 <div class="rating">★★★★★ 4.7</div>
 
-<p>AI powered workspace assistant for notes, productivity, and organization.</p>
+<p>AI powered workspace assistant for notes, productivity and organization.</p>
 
 </div>
 </a>
@@ -164,7 +195,7 @@ placeholder="Search AI tools...">
 
 <div class="rating">★★★★★ 4.6</div>
 
-<p>Create AI powered videos, visual effects, and media content easily.</p>
+<p>Create AI powered videos, visual effects and media content easily.</p>
 
 </div>
 </a>
@@ -179,7 +210,7 @@ placeholder="Search AI tools...">
 
 <div class="rating">★★★★★ 4.7</div>
 
-<p>AI writing assistant for marketing copy, blogs, ads, and business content creation.</p>
+<p>AI writing assistant for marketing copy, blogs, ads and business content.</p>
 
 </div>
 </a>
@@ -239,7 +270,7 @@ placeholder="Search AI tools...">
 const searchInput = document.getElementById("toolSearch");
 const tools = document.querySelectorAll(".tool-card");
 
-searchInput.addEventListener("keyup", function() {
+searchInput.addEventListener("keyup", function(){
 
 const value = this.value.toLowerCase();
 
@@ -247,32 +278,19 @@ tools.forEach(tool => {
 
 const text = tool.innerText.toLowerCase();
 
-if(text.includes(value)){
-tool.style.display = "block";
-}else{
-tool.style.display = "none";
-}
+tool.style.display = text.includes(value) ? "block" : "none";
 
 });
 
 });
-
-
 
 function filterTools(category){
-
-const tools = document.querySelectorAll(".tool-card");
 
 tools.forEach(tool => {
 
 const toolCategory = tool.getAttribute("data-category");
 
-if(category === "all" || toolCategory === category){
-tool.style.display = "block";
-}
-else{
-tool.style.display = "none";
-}
+tool.style.display = (category === "all" || toolCategory === category) ? "block" : "none";
 
 });
 
