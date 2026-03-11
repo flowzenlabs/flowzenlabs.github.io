@@ -4,8 +4,12 @@
 <head>
 
 <title>FlowZenLabs | AI Tools Directory</title>
-<link rel="stylesheet" href="style.css">
+
 <meta name="description" content="Discover the best AI tools for productivity, automation, design, and business.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -26,19 +30,18 @@
 
 </nav>
 
- <section class="hero">
+
+<section class="hero">
 
 <h1>Discover Powerful AI Tools</h1>
 
 <p>Your directory for the best AI tools for productivity, automation, and creativity.</p>
 
-<div class="search-box">
-
-</div>
-
 </section>
 
- <div class="container">
+
+<div class="container">
+
 <h2 class="section-title">🔥 Trending AI Tools</h2>
 
 <div class="tools-grid">
@@ -57,6 +60,7 @@
 </div>
 </a>
 
+
 <a href="tools/midjourney.html" class="tool-card-link">
 <div class="tool-card" data-category="image">
 
@@ -72,16 +76,22 @@
 </a>
 
 </div>
+
+
+
 <h2 class="section-title">Featured AI Tools</h2>
 
 <div class="search-box">
+
 <input 
 type="text"
 id="toolSearch"
 placeholder="Search AI tools...">
+
 </div>
 
- <div class="categories">
+
+<div class="categories">
 
 <button onclick="filterTools('all')">All</button>
 <button onclick="filterTools('writing')">Writing</button>
@@ -91,17 +101,19 @@ placeholder="Search AI tools...">
 
 </div>
 
+
+
 <div class="tools-grid">
 
-<a href="tools/chatgpt.html" class="tool-card-link">
 
+<a href="tools/chatgpt.html" class="tool-card-link">
 <div class="tool-card" data-category="writing">
 
 <img src="chatgpt.jpeg" loading="lazy">
 
 <span class="badge">🔥 Trending</span>
 
-<h3>ChatGPT</h3
+<h3>ChatGPT</h3>
 
 <div class="rating">★★★★★ 4.9</div>
 
@@ -111,17 +123,17 @@ and automation.
 </p>
 
 </div>
-
 </a>
 
-<a href="tools/notion-ai.html" class="tool-card-link">
 
+
+<a href="tools/notion-ai.html" class="tool-card-link">
 <div class="tool-card" data-category="productivity">
 
 <img src="notion.png" loading="lazy">
 
 <h3>Notion AI</h3>
- 
+
 <div class="rating">★★★★★ 4.7</div>
 
 <p>
@@ -130,18 +142,18 @@ productivity, and organization.
 </p>
 
 </div>
-
 </a>
- 
-<a href="tools/midjourney.html" class="tool-card-link">
 
+
+
+<a href="tools/midjourney.html" class="tool-card-link">
 <div class="tool-card" data-category="image">
 
 <img src="midjourney.png" loading="lazy">
 
 <h3>Midjourney</h3>
 
- <div class="rating">★★★★★ 4.8</div>
+<div class="rating">★★★★★ 4.8</div>
 
 <p>
 Create stunning AI generated artwork
@@ -149,17 +161,17 @@ and images from simple prompts.
 </p>
 
 </div>
-
 </a>
 
- <a href="tools/runway.html" class="tool-card-link">
 
+
+<a href="tools/runway.html" class="tool-card-link">
 <div class="tool-card" data-category="video">
 
 <img src="runway.png" loading="lazy">
 
 <h3>Runway ML</h3>
- 
+
 <div class="rating">★★★★★ 4.6</div>
 
 <p>
@@ -168,12 +180,13 @@ and media content easily.
 </p>
 
 </div>
-
 </a>
 
 </div>
 
 </div>
+
+
 
 <div class="container">
 
@@ -193,35 +206,16 @@ and media content easily.
 
 </div>
 
+
+
 <footer>
 
 © FlowZenLabs
 
 </footer>
 
-<script>
 
-function filterTools(category){
 
-let cards = document.querySelectorAll(".tool-card");
-
-cards.forEach(card => {
-
-if(category === "all"){
-card.style.display = "block";
-}
-else if(card.dataset.category === category){
-card.style.display = "block";
-}
-else{
-card.style.display = "none";
-}
-
-});
-
-}
-
-</script>
 <script>
 
 const searchInput = document.getElementById("toolSearch");
@@ -245,6 +239,8 @@ tool.style.display = "none";
 
 });
 
+
+
 function filterTools(category){
 
 const tools = document.querySelectorAll(".tool-card");
@@ -265,6 +261,7 @@ tool.style.display = "none";
 }
 
 </script>
+
 </body>
 
 </html>
