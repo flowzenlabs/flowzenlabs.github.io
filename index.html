@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowZenLabs | AI Tools Directory</title>
 
-<title>FlowZenLabs - AI Tools Directory</title>
+<meta name="description" content="Discover the best AI tools for productivity, automation, design, and business.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,120 +15,272 @@
 
 <body>
 
-<header>
-
-<div class="container nav">
-
-<h2 class="logo">FlowZenLabs</h2>
-
 <nav>
 
-<ul>
+<div class="logo">FlowZenLabs</div>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="#">AI Writing</a></li>
-<li><a href="#">AI Images</a></li>
-<li><a href="#">AI Video</a></li>
-<li><a href="#">AI Automation</a></li>
-<li><a href="#">Submit Tool</a></li>
-
-</ul>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="ai-writing-tools.html">AI Writing</a>
+<a href="ai-image-generators.html">AI Images</a>
+<a href="ai-video-tools.html">AI Video</a>
+<a href="ai-automation-tools.html">AI Automation</a>
+<a href="submit-tool.html">Submit Tool</a>
+</div>
 
 </nav>
 
-</div>
-
-</header>
-
 <section class="hero">
-
-<div class="container">
 
 <h1>Discover Powerful AI Tools</h1>
 
-<p>Explore the best AI tools for productivity, creativity and automation.</p>
-
-</div>
+<p>Your directory for the best AI tools for productivity, automation, and creativity.</p>
 
 </section>
 
-<section class="tools-section">
-
 <div class="container">
 
-<h2>Featured AI Tools</h2>
-
-<input type="text" id="searchInput" placeholder="Search AI tools...">
+<h2 class="section-title">🔥 Trending AI Tools</h2>
 
 <div class="tools-grid">
 
-<a href="tools/chatgpt.html" class="tool-card">ChatGPT</a>
+<a href="tools/chatgpt.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<img src="chatgpt.jpeg">
+<h3>ChatGPT</h3>
+<div class="rating">★★★★★ 4.9</div>
+<p>Advanced AI chatbot for writing, coding, research and automation.</p>
+</div>
+</a>
 
-<a href="tools/claude.html" class="tool-card">Claude AI</a>
+<a href="tools/claude.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<img src="claude.png">
+<h3>Claude AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>Advanced AI assistant for writing and research tasks.</p>
+</div>
+</a>
 
-<a href="tools/midjourney.html" class="tool-card">Midjourney</a>
+<a href="tools/midjourney.html" class="tool-card-link">
+<div class="tool-card" data-category="image">
+<img src="midjourney.png">
+<h3>Midjourney</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>Create stunning AI generated artwork and images.</p>
+</div>
+</a>
 
-<a href="tools/leonardo-ai.html" class="tool-card">Leonardo AI</a>
-
-<a href="tools/notion-ai.html" class="tool-card">Notion AI</a>
-
-<a href="tools/perplexity.html" class="tool-card">Perplexity AI</a>
-
-<a href="tools/cursor.html" class="tool-card">Cursor</a>
-
-<a href="tools/tome.html" class="tool-card">Tome AI</a>
-
-<a href="tools/jasper.html" class="tool-card">Jasper AI</a>
-
-<a href="tools/copy-ai.html" class="tool-card">Copy.ai</a>
-
-<a href="tools/ideogram.html" class="tool-card">Ideogram AI</a>
-
-<a href="tools/runway.html" class="tool-card">Runway ML</a>
-
-<a href="tools/pika.html" class="tool-card">Pika Labs</a>
-
-<a href="tools/synthesia.html" class="tool-card">Synthesia</a>
-
-<a href="tools/heygen.html" class="tool-card">HeyGen</a>
-
-<a href="tools/elevenlabs.html" class="tool-card">ElevenLabs</a>
+<a href="tools/leonardo-ai.html" class="tool-card-link">
+<div class="tool-card" data-category="image">
+<img src="leonardo.png">
+<h3>Leonardo AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>Create high quality AI generated art and assets.</p>
+</div>
+</a>
 
 </div>
 
 </div>
-
-</section>
-
-<footer>
 
 <div class="container">
 
-<p>© FlowZenLabs</p>
+<h2 class="section-title">Featured AI Tools</h2>
+
+<div class="search-box">
+<input type="text" id="toolSearch" placeholder="Search AI tools...">
+</div>
+
+<div class="categories">
+
+<button onclick="filterTools('all')">All</button>
+<button onclick="filterTools('writing')">Writing</button>
+<button onclick="filterTools('image')">Image</button>
+<button onclick="filterTools('video')">Video</button>
+<button onclick="filterTools('productivity')">Productivity</button>
 
 </div>
+
+<div class="tools-grid">
+
+<a href="tools/chatgpt.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<span class="badge">🔥 Trending</span>
+<img src="chatgpt.jpeg">
+<h3>ChatGPT</h3>
+<div class="rating">★★★★★ 4.9</div>
+<p>Advanced AI chatbot.</p>
+</div>
+</a>
+
+<a href="tools/claude.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<img src="claude.png">
+<h3>Claude AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>AI assistant for writing and reasoning.</p>
+</div>
+</a>
+
+<a href="tools/jasper.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<img src="jasper.jpg">
+<h3>Jasper AI</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>AI writing assistant.</p>
+</div>
+</a>
+
+<a href="tools/copy-ai.html" class="tool-card-link">
+<div class="tool-card" data-category="writing">
+<img src="copyai.png">
+<h3>Copy.ai</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>AI platform for marketing copy.</p>
+</div>
+</a>
+
+<a href="tools/notion-ai.html" class="tool-card-link">
+<div class="tool-card" data-category="productivity">
+<img src="notion.png">
+<h3>Notion AI</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>AI workspace assistant.</p>
+</div>
+</a>
+
+<a href="tools/perplexity.html" class="tool-card-link">
+<div class="tool-card" data-category="productivity">
+<img src="perplexity.png">
+<h3>Perplexity AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>AI search engine.</p>
+</div>
+</a>
+
+<a href="tools/cursor.html" class="tool-card-link">
+<div class="tool-card" data-category="productivity">
+<img src="cursor.png">
+<h3>Cursor AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>AI powered coding editor.</p>
+</div>
+</a>
+
+<a href="tools/tome.html" class="tool-card-link">
+<div class="tool-card" data-category="productivity">
+<img src="tome.png">
+<h3>Tome AI</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>Create AI presentations.</p>
+</div>
+</a>
+
+<a href="tools/midjourney.html" class="tool-card-link">
+<div class="tool-card" data-category="image">
+<img src="midjourney.png">
+<h3>Midjourney</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>AI artwork generator.</p>
+</div>
+</a>
+
+<a href="tools/leonardo-ai.html" class="tool-card-link">
+<div class="tool-card" data-category="image">
+<img src="leonardo.png">
+<h3>Leonardo AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>Creative AI image generator.</p>
+</div>
+</a>
+
+<a href="tools/ideogram.html" class="tool-card-link">
+<div class="tool-card" data-category="image">
+<img src="ideogram.png">
+<h3>Ideogram AI</h3>
+<div class="rating">★★★★★ 4.8</div>
+<p>AI image generator with strong text rendering.</p>
+</div>
+</a>
+
+<a href="tools/runway.html" class="tool-card-link">
+<div class="tool-card" data-category="video">
+<img src="runway.png">
+<h3>Runway ML</h3>
+<div class="rating">★★★★★ 4.6</div>
+<p>Create AI powered videos.</p>
+</div>
+</a>
+
+<a href="tools/pika.html" class="tool-card-link">
+<div class="tool-card" data-category="video">
+<img src="pika.png">
+<h3>Pika Labs</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>Generate AI videos.</p>
+</div>
+</a>
+
+<a href="tools/synthesia.html" class="tool-card-link">
+<div class="tool-card" data-category="video">
+<img src="synthesia.png">
+<h3>Synthesia</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>Create AI avatar videos.</p>
+</div>
+</a>
+
+<a href="tools/heygen.html" class="tool-card-link">
+<div class="tool-card" data-category="video">
+<img src="heygen.png">
+<h3>HeyGen</h3>
+<div class="rating">★★★★★ 4.7</div>
+<p>Create AI avatar videos.</p>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© FlowZenLabs
 
 </footer>
 
 <script>
 
-const searchInput = document.getElementById("searchInput");
+const searchInput = document.getElementById("toolSearch");
+const tools = document.querySelectorAll(".tool-card");
 
 searchInput.addEventListener("keyup", function(){
 
-let filter = searchInput.value.toLowerCase();
+const value = this.value.toLowerCase();
 
-let cards = document.querySelectorAll(".tool-card");
+tools.forEach(tool => {
 
-cards.forEach(card => {
+const text = tool.innerText.toLowerCase();
 
-let text = card.textContent.toLowerCase();
-
-card.style.display = text.includes(filter) ? "block" : "none";
+tool.parentElement.style.display = text.includes(value) ? "block" : "none";
 
 });
 
 });
+
+function filterTools(category){
+
+tools.forEach(tool => {
+
+const toolCategory = tool.getAttribute("data-category");
+
+tool.parentElement.style.display =
+(category === "all" || toolCategory === category) ? "block" : "none";
+
+});
+
+}
 
 </script>
 
